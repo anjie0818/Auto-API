@@ -1,0 +1,13 @@
+<suite name="Default Suite">
+    <test name="Auto-API">
+        <classes>
+            <class name="com.test.testng.BasicAnnotation"/>
+        </classes>
+    </test>
+    <!--  Auto-API  -->
+    <listeners>
+        <!--<listener class-name="com.vimalselvam.testng.listener.ExtentTestNgFormatter"/>-->
+        <!--<listener class-name="com.tester.extend.demo.ExtentTestNGIReporterListenerOld" />-->
+        <listener class-name="com.test.testng.listener.ExtentTestNGIReporterListener" />
+    </listeners>
+</suite><!--  Default Suite  -->
