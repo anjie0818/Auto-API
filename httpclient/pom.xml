@@ -65,6 +65,16 @@
                             ./src/main/resources/testNG.xml
                         </suiteXmlFile>
                     </suiteXmlFiles>
+                    <properties>
+                        <property>
+                            <name>usedefaultlisteners</name>
+                            <value>false</value>
+                        </property>
+                        <property>
+                            <name>listener</name>
+                            <value>com.test.httpclient.ExtentTestNGIReporterListener</value>
+                        </property>
+                    </properties>
 
                 </configuration>
             </plugin>

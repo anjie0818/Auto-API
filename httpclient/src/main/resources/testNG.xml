@@ -7,6 +7,6 @@
     </classes>
   </test> <!-- Auto-Selenium -->
     <listeners>
-      <listener class-name='com.test.httpclient.ExtentTestNGIReporterListener'/>
+      <!--<listener class-name='com.test.httpclient.ExtentTestNGIReporterListener'/>-->
   </listeners>
 </suite> <!-- Default Suite -->
