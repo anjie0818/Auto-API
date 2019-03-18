@@ -28,6 +28,7 @@
 
         <module>testng</module>
         <module>httpclient</module>
+        <module>integration</module>
     </modules>
 
 </project>
