@@ -72,7 +72,7 @@ public class DoPostCookie {
     @Test
     public void testGetCookies() throws IOException {
         String getCookieStr=url+bundle.getString("login");
-        String param="username=sang&password=an1jie&";
+        String param="username=sang&password=anjie&";
         HttpPost httpPost=new HttpPost(getCookieStr);
         DefaultHttpClient httpClient=new DefaultHttpClient();
         //添加请求头
