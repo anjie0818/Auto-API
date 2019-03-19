@@ -11,6 +11,7 @@ import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
 import org.json.JSONObject;
+import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -53,6 +54,7 @@ public class DoPostCookie {
     }
     @Test(dependsOnMethods = "testGetCookies")
     public void addArticle() throws IOException {
+        Assert.assertEquals(1,3);
         String addAriticleUrl=url+bundle.getString("addArticle");
         String param="id=-1&title=%E6%A0%87%E9%A2%98&mdContent=%E5%86%85%E5%AE%B9&htmlContent=%3Cp%3E%E5%86%85%E5%AE%B9%3C%2Fp%3E%0A&cid=66&state=1&dynamicTags=&\n";
         HttpPost httpPost=new HttpPost(addAriticleUrl);
